@@ -8,7 +8,7 @@
 
         '''kotlin
         // mutável
-        var idade = 15
+        var idade: Int = 15
         idade = 19
 
         // imutável
@@ -80,5 +80,58 @@ Kotlin tem inferência de tipo, mas a **tipagem é estática**!
 
                 } while() //para quem quiser, ele existe
         '''
+
+### 5. Funções
+
+Declaradas com a palavra reservada **fun**, seguida do nome, parâmetros e tipo de retorno, quando houver.
+
+        '''kotlin
+        fun deveVotar(idade: Int): String{
+                when(idade){
+                 in 18..69 -> {
+                           7+2
+                          "É obrigado a votar"   
+                 }
+                 in 0..15 -> "Não pode votar"
+                 else -> "Vota se quiser"
+                }  
+        }
+        '''
+
+O Equivalente ao **void** em Kotlin se chama **Unit** e não é obrigatório.
+        '''kotlin
+        fun fazAlgumaCoisa(): Unit{
+                //corpo da função sem return
+        }
+        
+        fun fazOutraCoisa(){
+           //declaração equivalente para uma função sem retorno
+        }
+        '''
+        
+Quando a função é composta por uma única expressão, podemos usar o sinal de atribuição ("="):
+
+        '''kotlin
+        fun somar(a: Int, b: Int): Int{
+                return a + b
+        }
+        
+        // A sintaxe abaixo é equivalente
+        fun somar(a: Int, b: Int) = a + b
+        '''
+        
+Lembrando que **if** e **when** são expressões, podemos reescrever a função **deveVotar**:
+
+        '''kotlin
+        fun deveVotar(idade: Int) = when(idade){
+         in 18..69 -> {
+                   7+2
+                  "É obrigado a votar"   
+         }
+         in 0..15 -> "Não pode votar"
+         else -> "Vota se quiser"  
+        }
+        '''
+
 
 
