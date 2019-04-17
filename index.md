@@ -132,6 +132,48 @@ Lembrando que **if** e **when** são expressões, podemos reescrever a função 
          else -> "Vota se quiser"  
         }
         '''
+        
+### 6 Maps (Dicionários, tabelas de hash...)
+
+
+### 7 Tipos Nulos (nullable)
+
+
+### 8 Classes
+
+#### 8.1 Declaração de classes
+
+Utiliza-se a palavra reservada **class** seguida do nome da classe. Em Kotlin, os parâmetros do construtor principal da classe são colocados logo após o nome da classe. É necessário especificar se os atributos são mutáveis (var) ou imutáveis (val).
+
+        class Cidadao(val nome: String,
+                      val data_nascimento: String, //yyyy-MM-dd
+                      var nacionalidade: String)
+                      
+        val cidadaoCarioca = Cidadao("Estácio de Sá", "1920-03-23", "Brasileiro")
+        
+Geralmente não precisamos criar construtores sobrecarregados, pois Kotlin suporta valores padrões para argumentos de funções. 
+
+        class Cidadao(val nome: String,
+                      val data_nascimento: String, //yyyy-MM-dd
+                      var nacionalidade: String = "Brasileiro")
+        
+        // as duas formas de se instanciar objetos são válidas
+        val cidadaoCarioca = Cidadao("Estácio de Sá", "1920-03-23")
+        val cidadaoPaulista = Cidadao("Manuel de Nóbrega", "1940-06-17", "Português)
+
+Todos os atributos da classe são propriedades por padrão:
+
+        // equivalente à propriedade nacionalidade declarada no construtor
+        var nacionalidade2 = "Brasileiro"
+        get(){
+        return field
+        }
+        set(value){
+        field = value
+        }
+        
+### 9 Strings
+
 
 
 
