@@ -1,4 +1,10 @@
-## Aula 1 - Intro to Kotlin
+#### Contato do professor: hallison.paz@prof.infnet.edu.br
+
+## Aula 2 - Exercitando o Kotlin - 18 de abril de 2019
+
+Realize o TP 1 em sala de aula, conforme as [especificações neste link](https://github.com/MobileTeacher/EDSN2A2T19/blob/master/TP1.md).
+
+## Aula 1 - Intro to Kotlin - 16 de abril de 2019
 
 
 ### 1. Declaração de variáveis
@@ -6,7 +12,7 @@
 **var** - valores podem ser reatribuídos, modificados (*variable*).
 **val** - valores que não podem ser modificados (*values*).
 
-        '''kotlin
+        ```kotlin
         // mutável
         var idade: Int = 15
         idade = 19
@@ -14,7 +20,8 @@
         // imutável
         val idade = 18
         idade = 32 //erro!
-        '''
+        ```
+        
 Kotlin tem inferência de tipo, mas a **tipagem é estática**!
 
         '''kotlin
