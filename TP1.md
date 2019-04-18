@@ -6,12 +6,36 @@ Tendo em vista que todos os alunos desta turma já possuem algum conhecimento de
 
 A tarefa busca cumprir dois objetivos, sendo o primeiro ambientar os alunos com a linguagem de programação Kotlin antes de seguirmos com tudo dentro do Android Studio. O segundo objetivo é possibilitar ao professor identificar possíveis limitações ou dificuldades dos alunos na elaboração de soluções computacionais, explorando, inclusive, orientação a objetos.
 
-As tarefas devem ser realizadas em dupla ou trio, pois possuem um grau de dificuldade razoável. Abaixo, há XXX opções de tarefa; cada dupla ou trio deve escolher uma e todos os grupos devem ter tarefas diferentes. Durante o curso, algumas delas, senão todas, serão utilizadas na construção de algum aplicativo Android.
 
-### Opção 1 - Manipulação de Imagens
+### Tarefa 0: Sorteio de amigo oculto
 
+Faça um programa que receba como entrada os participantes de um amigo oculto e gere um resultado de sorteio válido, isto é, associe a cada participante um outro participante aleatoriamente.
 
-### Opção 2 - Manipulação de Strings
+### Tarefa 1: Jogo da Forca
 
+#### Etapa 1: Jogo da forca básico para 2 jogadores
 
-### Sorteio de amigo oculto
+Nesta primeira etapa, o jogo funcionará de maneira muito similar ao que fazemos com papel e caneta: um jogador (desafiante) pensa em uma palavra e o outro jogador (desafiado), conhecendo o tamanho da palavra, tenta advinhar quais letras estão presentes. Se o desafiado fizer um palpite correto, a letra é preenchida no(s) espaço(s) correspondente(s). Se o palpite estiver errado, o desafiado "perde uma vida". O jogo acaba quando o desafiado não tem mais vidas a perder ou quando ele advinha a palavra correta.
+
+#### Etapa 2: Jogo da Forca para 1 jogador
+
+Após se certificar de que a primeira etapa funciona, tente implementar algum mecanismo de escolha automática de palavras pela máquina; nesta segunda etapa, será possível escolher entre jogar com 2 jogadores ou com apenas 1. 
+
+No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo jogador. Lembre-se que ainda não temos acesso a banco de dados e nem bibliotecas  que não fazem parte do padrão da linguagem. Um sugestão é fazer o seguinte passo-a-passo:
+
+1. Selecione um texto grande sobre algum assunto, por exemplo, um tópico interessante na Wikipedia e atribua todo o texto a uma variável (String).
+2. Segmente o texto em palavras
+3. Remova as palavras duplicadas
+4. Remova os artigos, conjunções, interjeições e outros elementos sintáticos da língua portuguesa que não fazem sentido serem selecionados como palavras em um jogo da forca. 
+5. Remova os sinais de pontuação.
+6. Crie um dicionário com as palavras restantes
+
+### Considerações
+
+Os exercícios devem ser feitos individualmente, mas é autorizado pedir explicações a colegas, dando o devido crédito. Por exemplo, se você pediu ajuda a algum colega para implementar uma função, seja para ter uma ideia do caminho ou por não compreender algum conceito, coloque um comentário tipo este no seu código:
+
+  // Nesta função, tive dificuldades em compreender o uso de *propertys*, mas com a ajuda de Fulano de Tal entendi e consegui resolver.
+  
+O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e outro com a tarefa 1. Utilize o playground online para executar o seu código, irei testá-lo neste mesmo ambiente.
+
+Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
