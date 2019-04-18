@@ -21,7 +21,7 @@ Nesta primeira etapa, o jogo funcionará de maneira muito similar ao que fazemos
 
 Após se certificar de que a primeira etapa funciona, tente implementar algum mecanismo de escolha automática de palavras pela máquina; nesta segunda etapa, será possível escolher entre jogar com 2 jogadores ou com apenas 1. 
 
-No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo jogador. Lembre-se que ainda não temos acesso a banco de dados e nem bibliotecas  que não fazem parte do padrão da linguagem. Um sugestão é fazer o seguinte passo-a-passo:
+No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo jogador. Lembre-se que ainda não temos acesso a banco de dados e nem bibliotecas  que não fazem parte do padrão da linguagem. Uma sugestão é fazer o seguinte passo-a-passo:
 
 1. Selecione um texto grande sobre algum assunto, por exemplo, um tópico interessante na Wikipedia e atribua todo o texto a uma variável (String).
 2. Segmente o texto em palavras
@@ -29,13 +29,17 @@ No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo j
 4. Remova os artigos, conjunções, interjeições e outros elementos sintáticos da língua portuguesa que não fazem sentido serem selecionados como palavras em um jogo da forca. 
 5. Remova os sinais de pontuação.
 6. Crie um dicionário com as palavras restantes
+7. Escolha uma palavra aleatoriamente nesse dicionário
+
 
 ### Considerações
 
 Os exercícios devem ser feitos individualmente, mas é autorizado pedir explicações a colegas, dando o devido crédito. Por exemplo, se você pediu ajuda a algum colega para implementar uma função, seja para ter uma ideia do caminho ou por não compreender algum conceito, coloque um comentário tipo este no seu código:
 
-  // Nesta função, tive dificuldades em compreender o uso de *propertys*, mas com a ajuda de Fulano de Tal entendi e consegui resolver.
-  
+  ```
+    // Nesta função, tive dificuldades em compreender o uso de *propertys*, mas com a ajuda de Fulano de Tal entendi e consegui resolver.
+  ```
+
 O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e outro com a tarefa 1. Utilize o playground online para executar o seu código, irei testá-lo neste mesmo ambiente.
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
