@@ -36,10 +36,13 @@ No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo j
 
 Os exercícios devem ser feitos individualmente, mas é autorizado pedir explicações a colegas, dando o devido crédito. Por exemplo, se você pediu ajuda a algum colega para implementar uma função, seja para ter uma ideia do caminho ou por não compreender algum conceito, coloque um comentário tipo este no seu código:
 
-  ```
+  ```kotlin
     // Nesta função, tive dificuldades em compreender o uso de *propertys*, mas com a ajuda de Fulano de Tal entendi e consegui resolver.
   ```
 
 O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e outro com a tarefa 1. Utilize o playground online para executar o seu código, irei testá-lo neste mesmo ambiente.
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzEwNDAzMDMyXX0=
+-->
