@@ -45,7 +45,7 @@ I) Escreva uma classe que modele uma imagem. Você é livre para escrever tantas
 
 II) Faça uma função que espelhe a imagem (inverta os lados direito e esquerdo)
 
-III) 
+III) Faça uma função que rotacione a imagem de um
 i. Escolha uma ferramenta para explorar valores de cores, por exemplo, se você pesquisar por **color picker** o Google te apresenta uma na página de resultados.
 
 #### Opção 2: 
@@ -63,6 +63,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg2MzQwMTE3LC0xMDY3MzU4NTQ5LDcxMD
-QwMzAzMl19
+eyJoaXN0b3J5IjpbLTI2NjAzNTQ0MCw2ODYzNDAxMTcsLTEwNj
+czNTg1NDksNzEwNDAzMDMyXX0=
 -->
