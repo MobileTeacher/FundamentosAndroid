@@ -31,6 +31,12 @@ No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo j
 6. Crie um dicionário com as palavras restantes
 7. Escolha uma palavra aleatoriamente nesse dicionário
 
+## Teste de performance 1 parte II
+
+A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta parte após concluí-los.
+
+Se você não 
+
 
 ### Considerações
 
@@ -44,5 +50,5 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwNDAzMDMyXX0=
+eyJoaXN0b3J5IjpbMjU0MTgxOTcxLDcxMDQwMzAzMl19
 -->
