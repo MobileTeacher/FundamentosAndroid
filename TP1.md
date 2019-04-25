@@ -48,9 +48,11 @@ II) Faça uma função que espelhe a imagem (inverta os lados direito e esquerdo
 
 III) Escolha uma ferramenta para explorar valores de cores, por exemplo, se você pesquisar por **color picker** o Google te apresenta uma na página de resultados. Olhe as cores rgb(0, 0, 0); rgb(255, 255, 255), rgb(128, 128, 128), que cores são essas? Que que elas tem em comum?
 
-IV) Implemente uma função que converta a sua 
+IV) Implemente uma função que converta uma imagem colorida em uma imagem preto e branco (escala de cinza).
 
-#### Opção 2: 
+#### Opção 2: Guardando segredo
+
+
 
 
 ### Considerações
@@ -65,6 +67,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5NzE3ODU1LDY4NjM0MDExNywtMTA2Nz
-M1ODU0OSw3MTA0MDMwMzJdfQ==
+eyJoaXN0b3J5IjpbMjEyNjM5MjM0Miw2ODYzNDAxMTcsLTEwNj
+czNTg1NDksNzEwNDAzMDMyXX0=
 -->
