@@ -45,7 +45,6 @@ I) Escreva uma classe que modele uma imagem. Você é livre para escrever tantas
 
 II) Faça uma função que espelhe a imagem (inverta os lados direito e esquerdo)
 
-
 III) Escolha uma ferramenta para explorar valores de cores, por exemplo, se você pesquisar por **color picker** o Google te apresenta uma na página de resultados. Olhe as cores rgb(0, 0, 0); rgb(255, 255, 255), rgb(128, 128, 128), que cores são essas? Que que elas tem em comum?
 
 IV) Implemente uma função que converta uma imagem colorida em uma imagem preto e branco (escala de cinza).
@@ -54,8 +53,7 @@ IV) Implemente uma função que converta uma imagem colorida em uma imagem preto
 
 I) Implemente um mini sistema de cadastro e autenticação. Receba o email como nome de usuário e peça uma senha. Armazene um hash da senha em uma estrutura de dados adequada. Depois de cadastrar, solicite o nome de usuário e a senha novamente e faça a validação respondendo adequadamente para cada caso.
 
-II) Agora, o usuário pode logar com CPF também. Ele ainda precisa de um email para cadastrar, mas caso tenha um CPF cadastrado, poderá usar tanto o CPF como o email no campo "nome de usuário". Pense em como implementa isso com u
-
+II) Agora, o usuário pode logar com CPF também. Ele ainda precisa de um email para cadastrar, mas caso tenha um CPF cadastrado, poderá usar tanto o CPF como o email no campo "nome de usuário". Pense em como implementar isso com uma boa usabilidade tendo em vista que você quer fazer um aplicativo móvel. Implemente esse sistema em Kotlin da melhor forma que conseguir.
 
 
 ### Considerações
@@ -70,6 +68,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0ODgyNDU5LDY4NjM0MDExNywtMTA2Nz
-M1ODU0OSw3MTA0MDMwMzJdfQ==
+eyJoaXN0b3J5IjpbLTMxMzI3MTU3NCw2ODYzNDAxMTcsLTEwNj
+czNTg1NDksNzEwNDAzMDMyXX0=
 -->
