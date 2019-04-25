@@ -33,7 +33,12 @@ No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo j
 
 ## Teste de performance 1 parte II
 
-A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta parte após concluí-los. Há duas 
+A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta parte após concluí-los. Você pode escolher uma dentre as duas opções a seguir:
+
+#### Opção 1: 
+
+
+#### Op
 
 
 ### Considerações
@@ -48,5 +53,5 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5ODExMDM2Nyw3MTA0MDMwMzJdfQ==
+eyJoaXN0b3J5IjpbLTE5OTcyMDcyOTEsNzEwNDAzMDMyXX0=
 -->
