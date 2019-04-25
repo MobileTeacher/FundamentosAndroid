@@ -1,3 +1,4 @@
+
 # Fundamentos do desenvolvimento Android - Aula 2 - 18/04/2019
 
 ## Teste de performance 1 parte I
@@ -70,6 +71,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjk4MTAyNiw2ODYzNDAxMTcsLTEwNj
-czNTg1NDksNzEwNDAzMDMyXX0=
+eyJoaXN0b3J5IjpbMTIwNTI4NDcyMCwtNjA2OTgxMDI2LDY4Nj
+M0MDExNywtMTA2NzM1ODU0OSw3MTA0MDMwMzJdfQ==
 -->
