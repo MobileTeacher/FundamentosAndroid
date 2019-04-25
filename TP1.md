@@ -37,8 +37,7 @@ A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta p
 
 #### Opção 1: Manipulação de Imagens
 
-Uma forma de representar e pensar sobre imagens é pensar nelas como
-
+Uma forma de representar imagens é pensar nelas como uma matriz de pixels. Neste caso, cada posição da matriz diz qual a cor daquele pixel. Uma imagem com resoluçnao d e
 
 #### Opção 2: 
 
@@ -55,5 +54,5 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg1NDkyOSw3MTA0MDMwMzJdfQ==
+eyJoaXN0b3J5IjpbMTM0MjQ2Njk3OCw3MTA0MDMwMzJdfQ==
 -->
