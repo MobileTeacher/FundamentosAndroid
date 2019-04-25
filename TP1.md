@@ -41,8 +41,11 @@ Uma forma de representar imagens é pensar nelas como uma matriz de pixels. Nest
 
 De modo simplista, uma cor pode ser representada por três coordenadas: um valor para o canal vermelho, um para o canal verde e outro para o azul. A diferentes combinações de valores nesses 3 canais formam as cores que o a sua tela é capaz de exibir. Para este exercício, considere que cada canal é representado por apenas 1 byte (8 bits), assumindo, portanto, valores dentro da faixa 0..255.
 
-I) Escreva uma classe que modele uma imagem. Você é livre para escrever tantas classes auxiliares quanto ache que precise. Pense em atribu
+I) Escreva uma classe que modele uma imagem. Você é livre para escrever tantas classes auxiliares quanto ache que precise. Pense em atributos e métodos que façam sentido para a sua imagem.
 
+II) Faça uma função que espelhe a imagem (inverta os lados direito e esquerdo)
+
+III) 
 i. Escolha uma ferramenta para explorar valores de cores, por exemplo, se você pesquisar por **color picker** o Google te apresenta uma na página de resultados.
 
 #### Opção 2: 
@@ -60,6 +63,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDk1OTUwMywtMTA2NzM1ODU0OSw3MT
-A0MDMwMzJdfQ==
+eyJoaXN0b3J5IjpbNjg2MzQwMTE3LC0xMDY3MzU4NTQ5LDcxMD
+QwMzAzMl19
 -->
