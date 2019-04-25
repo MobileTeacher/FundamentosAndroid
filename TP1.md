@@ -1,3 +1,28 @@
+# Fundamentos do desenvolvimento Android - Aula 3 - 25/04/2019
+
+## Teste de performance 1 parte II - Entrega
+
+A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta parte após concluí-los. Você pode escolher uma dentre as duas opções a seguir:
+
+#### Opção 1: Manipulação de Imagens
+
+Uma forma de representar imagens é pensar nelas como uma matriz de pixels. Neste caso, cada posição da matriz diz qual a cor daquele pixel. Uma imagem com resolução de 800x600, por exemplo, seria uma matriz com 800 colunas e 600 linhas.
+
+De modo simplista, uma cor pode ser representada por três coordenadas: um valor para o canal vermelho, um para o canal verde e outro para o azul. A diferentes combinações de valores nesses 3 canais formam as cores que o a sua tela é capaz de exibir. Para este exercício, considere que cada canal é representado por apenas 1 byte (8 bits), assumindo, portanto, valores dentro da faixa 0..255.
+
+I) Escreva uma classe que modele uma imagem. Você é livre para escrever tantas classes auxiliares quanto ache que precise. Pense em atributos e métodos que façam sentido para a sua imagem.
+
+II) Faça uma função que espelhe a imagem (inverta os lados direito e esquerdo)
+
+III) Escolha uma ferramenta para explorar valores de cores, por exemplo, se você pesquisar por **color picker** o Google te apresenta uma na página de resultados. Olhe as cores rgb(0, 0, 0); rgb(255, 255, 255), rgb(128, 128, 128), que cores são essas? Que que elas tem em comum?
+
+IV) Implemente uma função que converta uma imagem colorida em uma imagem preto e branco (escala de cinza).
+
+#### Opção 2: Mini sistema de autenticação
+
+I) Implemente um mini sistema de cadastro e autenticação. Receba o email como nome de usuário e peça uma senha. Armazene um hash da senha em uma estrutura de dados adequada. Depois de cadastrar, solicite o nome de usuário e a senha novamente e faça a validação respondendo adequadamente para cada caso.
+
+II) Agora, o usuário pode logar com CPF também. Ele ainda precisa de um email para cadastrar, mas caso tenha um CPF cadastrado, poderá usar tanto o CPF como o email no campo "nome de usuário". Pense em como implementar isso com uma boa usabilidade tendo em vista que você quer fazer um aplicativo móvel. Implemente esse sistema em Kotlin da melhor forma que conseguir.
 
 # Fundamentos do desenvolvimento Android - Aula 2 - 18/04/2019
 
@@ -32,33 +57,6 @@ No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo j
 6. Crie um dicionário com as palavras restantes
 7. Escolha uma palavra aleatoriamente nesse dicionário
 
-# Fundamentos do desenvolvimento Android - Aula 3 - 25/04/2019
-
-## Teste de performance 1 parte II
-
-A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta parte após concluí-los. Você pode escolher uma dentre as duas opções a seguir:
-
-#### Opção 1: Manipulação de Imagens
-
-Uma forma de representar imagens é pensar nelas como uma matriz de pixels. Neste caso, cada posição da matriz diz qual a cor daquele pixel. Uma imagem com resolução de 800x600, por exemplo, seria uma matriz com 800 colunas e 600 linhas.
-
-De modo simplista, uma cor pode ser representada por três coordenadas: um valor para o canal vermelho, um para o canal verde e outro para o azul. A diferentes combinações de valores nesses 3 canais formam as cores que o a sua tela é capaz de exibir. Para este exercício, considere que cada canal é representado por apenas 1 byte (8 bits), assumindo, portanto, valores dentro da faixa 0..255.
-
-I) Escreva uma classe que modele uma imagem. Você é livre para escrever tantas classes auxiliares quanto ache que precise. Pense em atributos e métodos que façam sentido para a sua imagem.
-
-II) Faça uma função que espelhe a imagem (inverta os lados direito e esquerdo)
-
-III) Escolha uma ferramenta para explorar valores de cores, por exemplo, se você pesquisar por **color picker** o Google te apresenta uma na página de resultados. Olhe as cores rgb(0, 0, 0); rgb(255, 255, 255), rgb(128, 128, 128), que cores são essas? Que que elas tem em comum?
-
-IV) Implemente uma função que converta uma imagem colorida em uma imagem preto e branco (escala de cinza).
-
-#### Opção 2: Mini sistema de autenticação
-
-I) Implemente um mini sistema de cadastro e autenticação. Receba o email como nome de usuário e peça uma senha. Armazene um hash da senha em uma estrutura de dados adequada. Depois de cadastrar, solicite o nome de usuário e a senha novamente e faça a validação respondendo adequadamente para cada caso.
-
-II) Agora, o usuário pode logar com CPF também. Ele ainda precisa de um email para cadastrar, mas caso tenha um CPF cadastrado, poderá usar tanto o CPF como o email no campo "nome de usuário". Pense em como implementar isso com uma boa usabilidade tendo em vista que você quer fazer um aplicativo móvel. Implemente esse sistema em Kotlin da melhor forma que conseguir.
-
-
 ### Considerações
 
 Os exercícios devem ser feitos individualmente, mas é autorizado pedir explicações a colegas, dando o devido crédito. Por exemplo, se você pediu ajuda a algum colega para implementar uma função, seja para ter uma ideia do caminho ou por não compreender algum conceito, coloque um comentário tipo este no seu código:
@@ -71,6 +69,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTI4NDcyMCwtNjA2OTgxMDI2LDY4Nj
+eyJoaXN0b3J5IjpbMjAyNDc0NTIwMSwtNjA2OTgxMDI2LDY4Nj
 M0MDExNywtMTA2NzM1ODU0OSw3MTA0MDMwMzJdfQ==
 -->
