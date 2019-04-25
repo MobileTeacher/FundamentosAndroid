@@ -64,10 +64,10 @@ Os exercícios devem ser feitos individualmente, mas é autorizado pedir explica
     // Nesta função, tive dificuldades em compreender o uso de *propertys*, mas com a ajuda de Fulano de Tal entendi e consegui resolver.
   ```
 
-O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e outro com a tarefa 1. Utilize o playground online para executar o seu código, irei testá-lo neste mesmo ambiente. O playground não permite receber entradas pelo console (usuário digitar), por isso, é importante que o seu programa saiba lidar com listas. Simule os valores das entradas lendo
+O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e outro com a tarefa 1. Utilize o playground online para executar o seu código, irei testá-lo neste mesmo ambiente. O playground não permite receber entradas pelo console (usuário digitar), por isso, é importante que o seu programa saiba lidar com listas. Simule os valores das entradas lendo tantos valores quanto forem necessários a partir de listas.
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDA0Mzg3Nyw2ODYzNDAxMTcsLTEwNj
-czNTg1NDksNzEwNDAzMDMyXX0=
+eyJoaXN0b3J5IjpbLTIwMTY3MjMxOTAsNjg2MzQwMTE3LC0xMD
+Y3MzU4NTQ5LDcxMDQwMzAzMl19
 -->
