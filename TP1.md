@@ -52,7 +52,9 @@ IV) Implemente uma função que converta uma imagem colorida em uma imagem preto
 
 #### Opção 2: Mini sistema de autenticação
 
-I) Implemente um mini sistema de cadastro e autenticação. Receba o email como nome de usuário e peça uma senha. Armazene um hash da senha em uma estrutura de dados adequada
+I) Implemente um mini sistema de cadastro e autenticação. Receba o email como nome de usuário e peça uma senha. Armazene um hash da senha em uma estrutura de dados adequada. Depois de cadastrar, solicite o nome de usuário e a senha novamente e faça a validação respondendo adequadamente para cada caso.
+
+II) 
 
 
 
@@ -68,6 +70,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5MTc1NTI0LDY4NjM0MDExNywtMTA2Nz
-M1ODU0OSw3MTA0MDMwMzJdfQ==
+eyJoaXN0b3J5IjpbLTE1MTQ2MTUxMTAsNjg2MzQwMTE3LC0xMD
+Y3MzU4NTQ5LDcxMDQwMzAzMl19
 -->
