@@ -50,8 +50,9 @@ III) Escolha uma ferramenta para explorar valores de cores, por exemplo, se voc�
 
 IV) Implemente uma função que converta uma imagem colorida em uma imagem preto e branco (escala de cinza).
 
-#### Opção 2: Guardando segredo
+#### Opção 2: Mini sistema de autenticação
 
+I) Implemente um mini sistema de cadastro e autenticação. Receba o email como nome de usuário e peça uma senha. Armazene um hash da senha em uma estrutura de dados adequada
 
 
 
@@ -67,6 +68,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjM5MjM0Miw2ODYzNDAxMTcsLTEwNj
-czNTg1NDksNzEwNDAzMDMyXX0=
+eyJoaXN0b3J5IjpbOTY5MTc1NTI0LDY4NjM0MDExNywtMTA2Nz
+M1ODU0OSw3MTA0MDMwMzJdfQ==
 -->
