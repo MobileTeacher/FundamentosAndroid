@@ -31,6 +31,8 @@ No modo "1 jogador", o computador deve escolher a palavra a ser advinhada pelo j
 6. Crie um dicionário com as palavras restantes
 7. Escolha uma palavra aleatoriamente nesse dicionário
 
+# Fundamentos do desenvolvimento Android - Aula 3 - 25/04/2019
+
 ## Teste de performance 1 parte II
 
 A prioridade é finalizar os exercícios da parte I primeiro. Avance para esta parte após concluí-los. Você pode escolher uma dentre as duas opções a seguir:
@@ -68,6 +70,6 @@ O entregável são dois arquivos de código Kotlin ".kt": um com a tarefa 0 e ou
 
 Lembre-se que o TP1 é obrigatório e tem o objetivo de te dar feedback quanto ao seu aprendizado para que possa melhorar. Não desperdice esta oportunidade de ouro.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY3MjMxOTAsNjg2MzQwMTE3LC0xMD
-Y3MzU4NTQ5LDcxMDQwMzAzMl19
+eyJoaXN0b3J5IjpbLTYwNjk4MTAyNiw2ODYzNDAxMTcsLTEwNj
+czNTg1NDksNzEwNDAzMDMyXX0=
 -->
