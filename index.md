@@ -7,8 +7,8 @@
 #### Índice
 
 1. [Introdução à linguagem de programação Kotlin](topico1.md)
-2. Android Studio
-3. Conceitos Primeiros apps
+2. [Android Studio](topico2.md)
+3. [Conceitos básicos e primeiros apps](topico3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTU4MzE5XX0=
+eyJoaXN0b3J5IjpbLTQxNjAzNzkzXX0=
 -->
