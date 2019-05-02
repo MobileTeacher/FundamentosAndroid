@@ -16,9 +16,17 @@ Antigamente, a gorjeta era padronizada em nossa cultura como sendo 10% do valor 
 2. Dar 10% de gorjeta
 3. Dar 12% de gorjeta
 
+#### OnCreate
+
+#### setOnClickListener
 
 
-##
+#### RadioGroup e RadioBu
+
+### Referências
+
+1. [Sobre tipos de inputs em um EditText](https://developer.android.com/training/keyboard-input/style)
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxODk5MjUzMCwtOTIyMzk1MjddfQ==
+eyJoaXN0b3J5IjpbLTg4NTg0MzA3NCwtOTIyMzk1MjddfQ==
 -->
