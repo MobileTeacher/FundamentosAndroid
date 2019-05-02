@@ -6,7 +6,7 @@ Como primeiro aplicativo, nosso objetivo é implementar uma calculadora de gorje
 
 Pensando nos componentes necessários para compor nossa interface, temos:
 
-* 1 espaço para entrada de dados do usuário (EditText)
+* 1 espaço para entrada de dados do usuário ([EditText](https://developer.android.com/reference/kotlin/android/widget/EditText))
 * 1 Botão (Button)
 * 1 componente capaz de exibir a resposta em texto (TextView)
 
@@ -17,6 +17,8 @@ Antigamente, a gorjeta era padronizada em nossa cultura como sendo 10% do valor 
 3. Dar 12% de gorjeta
 
 
+
+##
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMjM5NTI3XX0=
+eyJoaXN0b3J5IjpbMTcxODk5MjUzMCwtOTIyMzk1MjddfQ==
 -->
