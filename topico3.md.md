@@ -18,15 +18,19 @@ Antigamente, a gorjeta era padronizada em nossa cultura como sendo 10% do valor 
 
 #### OnCreate
 
-#### setOnClickListener
+#### Respondendo ao evento de clique em um botão
+
+Button e setOnClickListener
 
 
-#### RadioGroup e RadioBu
+#### RadioGroup e RadioButtons
+
+####
 
 ### Referências
 
 1. [Sobre tipos de inputs em um EditText](https://developer.android.com/training/keyboard-input/style)
 2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTg0MzA3NCwtOTIyMzk1MjddfQ==
+eyJoaXN0b3J5IjpbLTE1OTI1MzQ0NDIsLTkyMjM5NTI3XX0=
 -->
