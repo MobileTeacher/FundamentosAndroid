@@ -22,15 +22,17 @@ Antigamente, a gorjeta era padronizada em nossa cultura como sendo 10% do valor 
 
 Button e setOnClickListener
 
+#### EditText e TextView
+
 
 #### RadioGroup e RadioButtons
 
-####
 
 ### Referências
 
 1. [Sobre tipos de inputs em um EditText](https://developer.android.com/training/keyboard-input/style)
 2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI1MzQ0NDIsLTkyMjM5NTI3XX0=
+eyJoaXN0b3J5IjpbMTUzMzY5NDU3NCwtMTU5MjUzNDQ0MiwtOT
+IyMzk1MjddfQ==
 -->
