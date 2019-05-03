@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/output_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_radiogroup">
+
+        <RadioButton
+            android:id="@+id/out_bin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Binário"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <RadioButton
+            android:id="@+id/out_oct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Octal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <RadioButton
+            android:id="@+id/out_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Decimal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <RadioButton
+            android:id="@+id/out_hex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hexadecimal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/input_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_edittext">
+
+        <RadioButton
+            android:id="@+id/in_bin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Binário"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <RadioButton
+            android:id="@+id/in_oct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Octal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <RadioButton
+            android:id="@+id/in_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Decimal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+
+        <RadioButton
+            android:id="@+id/in_hex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hexadecimal"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="94dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/number_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/conversor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Converter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_radiogroup" />
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Resposta"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversor_button" />
+
+</android.support.constraint.ConstraintLayout>
