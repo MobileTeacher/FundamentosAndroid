@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.RadioButton
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
 
@@ -52,9 +53,37 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun convertBase(number: Int, from: Int, to: Int): String {
-        //TODO: DO!
+        if (from == 10 && to < 10){
+
+        }
+
+
         return number.toString()
     }
 
+    fun decimalToOther(number:Int, base:Int):String{
+        val binDigits = mutableListOf<Int>()
+        var result = number
+        do {
+            var rest = result%base
+            result = result/base
+            binDigits.add(rest)
+        } while (result > 0)
+        binDigits.reverse()
+        return binDigits.joinToString("")
+    }
+
+    fun otherToDecimal(number:Int, base:Int): Int{
+        //1572 = 2* 10^0 + 7*10^1 + 5 * 10^2 + 1*10^3
+        val numberString = number.toString()
+
+        var result = 0.0
+
+        for( i in numberString.indices){
+            val n = numberString[i].toInt()
+            result = result + n*(base.toDouble().pow(numberString.length-i-1))
+        }
+        return result.toInt()
+    }
 
 }
