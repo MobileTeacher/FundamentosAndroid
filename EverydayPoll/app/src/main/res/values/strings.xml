@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EverydayPoll</string>
+    <string name="placeholder_question">Qual sua avaliação do bloco de Android?</string>
+    <string name="awesome_string">Ótimo</string>
+    <string name="good_string">Bom</string>
+    <string name="regular_string">Regular</string>
+    <string name="bad_string">Ruim</string>
+    <string name="awful_string">Desastroso</string>
+    <string name="answer_string">Responder</string>
+    <string name="email_string">email</string>
 </resources>
