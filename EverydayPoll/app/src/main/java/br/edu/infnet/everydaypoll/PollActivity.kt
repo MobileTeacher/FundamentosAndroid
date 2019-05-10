@@ -5,45 +5,80 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_poll.*
+import kotlinx.android.synthetic.main.activity_result.*
 
 class PollActivity : AppCompatActivity() {
 
-    val votes = mutableListOf<Int>(0, 0, 0, 0, 0)
+    val NOT_SELECTED = -1
+    val votes = mutableMapOf<String, Int>()
+
+    val choicesCount: List<Int>
+    get() {
+        val choicesCount = mutableListOf(0, 0, 0, 0, 0)
+        for ( (key, value) in votes){
+            choicesCount[value] += 1
+        }
+        return  choicesCount
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_poll)
 
+        setUpListeners()
+    }
 
+    fun setUpListeners(){
         answer_button.setOnClickListener {
-            val selectedOptionId = poll_options_radiogroup.checkedRadioButtonId
-
-            when(selectedOptionId){
-                R.id.choice0 -> votes[0] += 1
-                R.id.choice1 -> votes[1] += 1
-                R.id.choice2 -> votes[2] += 1
-                R.id.choice3 -> votes[3] += 1
-                R.id.choice4 -> votes[4] += 1
+            if (email_edittext.text.isNotEmpty()){
+                val selectedOptionId = poll_options_radiogroup.checkedRadioButtonId
+                if (selectedOptionId != NOT_SELECTED){
+                    saveChoice(selectedOptionId)
+                    //limpa o campo de email
+                    email_edittext.setText("")
+                    //limpa a escolha
+                    poll_options_radiogroup.clearCheck()
+                    Toast.makeText(this, "Resposta gravada!", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this, "Selecione uma resposta!", Toast.LENGTH_LONG).show()
+                }
+            } else {
+                email_edittext.error = "Campo obrigatório"
             }
-            //limpa o campo de email
-            email_edittext.setText("")
-            //limpa a escolha
-            poll_options_radiogroup.clearCheck()
 
-            Toast.makeText(this, "Resposta gravada!", Toast.LENGTH_LONG).show()
         }
 
         end_button.setOnClickListener {
             //abrir a tela de resultados
             val resultIntent = Intent(this, ResultActivity::class.java)
 
-            resultIntent.putExtra(CHOICE0_EXTRA, votes[0])
-            resultIntent.putExtra(CHOICE1_EXTRA, votes[1])
-            resultIntent.putExtra(CHOICE2_EXTRA, votes[2])
-            resultIntent.putExtra(CHOICE3_EXTRA, votes[3])
-            resultIntent.putExtra(CHOICE4_EXTRA, votes[4])
+
+            resultIntent.putExtra(CHOICE0_EXTRA, choicesCount[0])
+            resultIntent.putExtra(CHOICE1_EXTRA, choicesCount[1])
+            resultIntent.putExtra(CHOICE2_EXTRA, choicesCount[2])
+            resultIntent.putExtra(CHOICE3_EXTRA, choicesCount[3])
+            resultIntent.putExtra(CHOICE4_EXTRA, choicesCount[4])
+
+
+
+            resultIntent.putExtra(QUESTION_EXTRA,  question_textview.text)
+            resultIntent.putExtra(ADDRESSES_EXTRA, votes.keys.toTypedArray())
 
 
             startActivity(resultIntent)
         }
+    }
+
+    fun saveChoice(selectedOptionId: Int){
+        val currentEmail = email_edittext.text.toString()
+        votes[currentEmail] = when(selectedOptionId){
+            R.id.choice0 -> 0
+            R.id.choice1 -> 1
+            R.id.choice2 -> 2
+            R.id.choice3 -> 3
+            R.id.choice4 -> 4
+            else -> NOT_SELECTED
+        }
+
     }
 }

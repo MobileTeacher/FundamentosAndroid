@@ -5,3 +5,6 @@ const val CHOICE1_EXTRA = "choice1"
 const val CHOICE2_EXTRA = "choice2"
 const val CHOICE3_EXTRA = "choice3"
 const val CHOICE4_EXTRA = "choice4"
+
+const val ADDRESSES_EXTRA = "addresses"
+const val QUESTION_EXTRA = "question"
