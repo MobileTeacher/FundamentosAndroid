@@ -5,14 +5,16 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
     val choices = mutableListOf<Int>()
-
+    val TAG = "ResultActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate")
         setContentView(R.layout.activity_result)
 
 
@@ -42,7 +44,8 @@ class ResultActivity : AppCompatActivity() {
 
     fun composeEmail(addresses: Array<String>, question: String){
         val emailIntent = Intent(Intent.ACTION_SEND)
-        emailIntent.setData(Uri.parse("mailto:"));
+        //emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.type = "*/*"
         val emailBody = """Olá,
             Você está recebendo este email, porque participou da enquente "${question}".
                 Segue abaixo o resultado:
@@ -62,6 +65,36 @@ class ResultActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Sem app", Toast.LENGTH_LONG).show()
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart")
+    }
+
+    override fun onDestroy() {
+        Log.d(TAG, "onDestroy")
+        super.onDestroy()
     }
 
 }

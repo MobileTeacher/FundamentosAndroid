@@ -3,6 +3,7 @@ package br.edu.infnet.everydaypoll
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_poll.*
 import kotlinx.android.synthetic.main.activity_result.*
@@ -24,6 +25,14 @@ class PollActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_poll)
+
+        if (savedInstanceState != null){
+            val mensagem = savedInstanceState.getString("Teste")
+            Log.d("PollActivity", mensagem)
+            email_edittext.setText(mensagem)
+        } else{
+            Toast.makeText(this, "NULO", Toast.LENGTH_SHORT).show()
+        }
 
         setUpListeners()
     }
@@ -49,7 +58,7 @@ class PollActivity : AppCompatActivity() {
         }
 
         end_button.setOnClickListener {
-            //abrir a tela de resultados
+            //abrir a tela de resultados - intent explícita
             val resultIntent = Intent(this, ResultActivity::class.java)
 
 
@@ -58,8 +67,6 @@ class PollActivity : AppCompatActivity() {
             resultIntent.putExtra(CHOICE2_EXTRA, choicesCount[2])
             resultIntent.putExtra(CHOICE3_EXTRA, choicesCount[3])
             resultIntent.putExtra(CHOICE4_EXTRA, choicesCount[4])
-
-
 
             resultIntent.putExtra(QUESTION_EXTRA,  question_textview.text)
             resultIntent.putExtra(ADDRESSES_EXTRA, votes.keys.toTypedArray())
@@ -80,5 +87,13 @@ class PollActivity : AppCompatActivity() {
             else -> NOT_SELECTED
         }
 
+    }
+
+
+    override fun onStop() {
+        super.onStop()
+        val bundle = Bundle()
+        bundle.putString("Teste", "Mensagem Oculta")
+        onSaveInstanceState(bundle)
     }
 }
