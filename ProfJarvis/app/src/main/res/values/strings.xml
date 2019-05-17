@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ProfJarvis</string>
     <string name="test_question">Qual o 3o método chamado durante o ciclo de vida de uma Activity?</string>
+    <string name="test_question2">Qual o método para adicionar um evento de click em uma View?</string>
     <string-array name="test_choices">
         <item>onCreate</item>
         <item>onStop</item>
