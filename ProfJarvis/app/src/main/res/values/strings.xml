@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProfJarvis</string>
+    <string name="test_question">Qual o 3o método chamado durante o ciclo de vida de uma Activity?</string>
+    <string-array name="test_choices">
+        <item>onCreate</item>
+        <item>onStop</item>
+        <item>onResume</item>
+        <item>onStart</item>
+    </string-array>
+
+</resources>
