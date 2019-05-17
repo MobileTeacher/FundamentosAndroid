@@ -14,8 +14,11 @@ Mensagem ao sistema que especifica explicitamente qual componente deve ser acion
 
 ### Intents implícitas
 
-Mensagem ao sistema que esp
+Mensagem ao sistema que especifica qual ação deseja ser realizada. O sistema Android apresenta ao usuário uma lista de aplicativos candidatos a realizar a ação.
+
+[Verifique a lista de intents comuns aqui.](https://developer.android.com/guide/components/intents-common?hl=pt-BR)
 	
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjA0NTY1N119
+eyJoaXN0b3J5IjpbLTYxNzczNzMwNl19
 -->
