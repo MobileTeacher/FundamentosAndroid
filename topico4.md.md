@@ -20,12 +20,14 @@ Mensagem ao sistema que especifica qual ação deseja ser realizada. O sistema A
 	
 	```kotlin
 	fun dialPhoneNumber(phoneNumber: String)  {  
-	val phoneIntent = Intent(Intent.ACTION_DIAL) 		
-	intent.data = Uri.parse("tel:"  + phoneNumber)  
-	if  (intent.resolveActivity(getPackageManager())  !=  null)  { 
-		startActivity(intent);  
-	}  
+		val phoneIntent = Intent(Intent.ACTION_DIAL) 		
+		intent.data = Uri.parse("tel:"  + phoneNumber)  
+		if  (phoneIntent.resolveActivity(packageManager())  !=  null)  { 
+			startActivity(intent)
+		}  
 	}
+	```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MzAzMDc4OF19
+eyJoaXN0b3J5IjpbNTk1NzM2MzQxXX0=
 -->
