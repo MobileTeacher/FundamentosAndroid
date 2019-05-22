@@ -57,6 +57,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        if (from == 2 && to == 16){
+            return bintoHex(number.toString())
+        }
+
 
         return number.toString()
     }
@@ -73,17 +77,50 @@ class MainActivity : AppCompatActivity() {
         return binDigits.joinToString("")
     }
 
-    fun otherToDecimal(number:Int, base:Int): Int{
+    fun otherToDecimal(numberString:String, base:Int): Int{
         //1572 = 2* 10^0 + 7*10^1 + 5 * 10^2 + 1*10^3
-        val numberString = number.toString()
+        //val numberString = number.toString()
 
         var result = 0.0
-
         for( i in numberString.indices){
-            val n = numberString[i].toInt()
+            val n = numberString[i].toString().toInt()
             result = result + n*(base.toDouble().pow(numberString.length-i-1))
         }
         return result.toInt()
+    }
+
+    fun binToDec(value: String): Int{
+        return otherToDecimal(value, 2)
+    }
+
+    fun padNumber(value: String): String{
+        val rest = value.length%4
+        var binTemp = value
+        for (i in 0..rest-1){
+            binTemp = "0" + binTemp
+        }
+        return binTemp
+    }
+
+    fun bintoHex(value: String): String{
+        var binTemp = padNumber(value)
+        val q = binTemp.length/4
+        var hex = ""
+        for (i in 0..q-1){
+            val block = binTemp.substring(4*i, 4*i+4)
+            val decTemp = binToDec(block)
+            hex += when(decTemp){
+                10 -> "A"
+                11 -> "B"
+                12 -> "C"
+                13 -> "D"
+                14 -> "E"
+                15 -> "F"
+                else -> decTemp
+            }
+        }
+        return hex
+
     }
 
 }
