@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
+import android.widget.TextView
 import kotlinx.android.synthetic.main.fragment_question.*
-
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,7 +21,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class QuestionFragment : Fragment() {
 
-    lateinit var questions: List<Question>
+
     lateinit var radioButtonsIds: List<Int>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -34,29 +34,41 @@ class QuestionFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val optionsArray = resources.getStringArray(R.array.test_choices)
-        questions = listOf(
-                Question(getString(R.string.test_question),
-                        optionsArray.toList(),
-                        2),
-                Question(getString(R.string.test_question2),
-                        listOf("setClickListener",
-                                "setOnClickListener",
-                                "setClickSpeaker",
-                                "setOnClickSpeaker"),
-                        1))
-
         radioButtonsIds = listOf(choice_a_radiobutton.id,
                 choice_b_radiobutton.id,
                 choice_c_radiobutton.id,
                 choice_d_radiobutton.id)
+        setUpQuestion()
     }
 
-    fun setUpQuestion(question: Question){
+    fun setUpQuestion(){
+        val arguments = arguments
+        if (arguments != null){
+            question_textview.text = arguments.getString(BODY_KEY)
+            val options = arguments.getStringArray(OPTIONS_KEY)
+            for (i in options.indices){
+                activity?.findViewById<RadioButton>(radioButtonsIds[i])?.text = options[i]
+            }
+        }
 
-        question_textview.text = question.body
-        for (i in question.options.indices){
-            activity?.findViewById<RadioButton>(radioButtonsIds[i])?.text = question.options[i]
+
+    }
+
+    companion object {
+        val BODY_KEY = "body"
+        val OPTIONS_KEY = "options"
+        val ANSWER_KEY = "answer"
+
+        fun newInstance(question: Question): QuestionFragment{
+            val questionFragment = QuestionFragment()
+            questionFragment.arguments = Bundle().apply {
+                // salva dados do parâmetro
+                putString(BODY_KEY, question.body)
+                putStringArray(OPTIONS_KEY, question.options.toTypedArray())
+                putInt(ANSWER_KEY, question.answer)
+            }
+
+            return questionFragment
         }
     }
 
