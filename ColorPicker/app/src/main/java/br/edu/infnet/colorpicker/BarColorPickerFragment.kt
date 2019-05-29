@@ -1,6 +1,8 @@
 package br.edu.infnet.colorpicker
 
 
+import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -15,44 +17,35 @@ import kotlinx.android.synthetic.main.fragment_bar_color_picker.*
  */
 class BarColorPickerFragment : Fragment() {
 
-    interface ColorChangeListener{
-        fun onColorChange(red: Int, green: Int, blue: Int)
-    }
-
-    var colorChangeListener: ColorChangeListener? = null
-    var redValue = 0
-    var greenValue = 0
-    var blueValue = 0
-
-
+    lateinit var colorPickerViewModel: ColorPickerViewModel
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
+        activity?.let {
+            colorPickerViewModel = ViewModelProviders
+                    .of(it)
+                    .get(ColorPickerViewModel::class.java)
+        }
         return inflater.inflate(R.layout.fragment_bar_color_picker, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //red_seekbar.setOnSeekBarChangeListener(onSeekBarChangeListener)
         val onSeekBarChangeListener = object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
                 if (fromUser){
                     when(seekBar.id){
                         red_seekbar.id -> {
-                            redValue = progress
-                            red_value_textview.text = progress.toString()
+                            colorPickerViewModel.red.value = progress
                         }
                         green_seekbar.id -> {
-                            greenValue = progress
-                            green_value_textview.text = progress.toString()
+                            colorPickerViewModel.green.value = progress
                         }
                         blue_seekbar.id -> {
-                            blueValue = progress
-                            blue_value_textview.text = progress.toString()
+                            colorPickerViewModel.blue.value = progress
                         }
                     }
-                    colorChangeListener?.onColorChange(redValue, greenValue, blueValue)
                 }
             }
             override fun onStartTrackingTouch(seekBar: SeekBar) {}
@@ -62,11 +55,22 @@ class BarColorPickerFragment : Fragment() {
         green_seekbar.setOnSeekBarChangeListener(onSeekBarChangeListener)
         blue_seekbar.setOnSeekBarChangeListener(onSeekBarChangeListener)
 
+        subscribe()
     }
 
-    fun setOnChangeColorListener(onChangeColorListener: ColorChangeListener){
-        colorChangeListener = onChangeColorListener
+    private fun subscribe(){
+        colorPickerViewModel.red.observe(this,
+                Observer {
+                    it?.let { red_value_textview.text = "$it"}
+                })
+        colorPickerViewModel.green.observe(this,
+                Observer {
+                    it?.let { green_value_textview.text = "$it"}
+                })
+        colorPickerViewModel.blue.observe(this,
+                Observer {
+                    it?.let { blue_value_textview.text = "$it"}
+                })
     }
-
 
 }
