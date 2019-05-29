@@ -24,9 +24,9 @@ class ColorViewerFragment : Fragment() {
 
 
     fun setColor(red:Int, green:Int, blue:Int){
-        //val color = (red shr 16) +  (green shr 8) + blue
+        val color = (255 shl 24) + (red shl 16) +  (green shl 8) + blue
 
-        color_view.setBackgroundColor(Color.rgb(red, green, blue))
+        color_view.setBackgroundColor(color)
     }
 
 
