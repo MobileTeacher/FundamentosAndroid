@@ -12,7 +12,7 @@ O objetivo deste trabalho é fazer um aplicativo para análise de perfil de inve
 * Como não somos os criadores da metodologia, é importante que em algum lugar do app esteja discriminada a referência ao Banco Paulista. Não há nenhuma propaganda em relação a este banco, apenas foi escolhido um formulário que estivesse disponível online juntamente com o processo de cálculo do perfil. Você pode colocar essa referência na tela inicial ou em uma tela de "Sobre".
 * A Activity de perguntas deve exibir cada pergunta em um fragmento que é substituído em tempo de execução, após a resposta do usuário.
 * Perceba que a pontuação de cada resposta encontra-se ao final do documento que descreve as perguntas. Você deve armazenar as respostas do usuário e somar o total de pontos.
-* As perguntas 8 e 9 podem ser ignoradas; se o fizer, atualize os limites de pontuação de cada perfil para: Conservador <= 12; 13 <= Moderado <= 29
+* As perguntas 8 e 9 podem ser ignoradas; se o fizer, atualize os limites de pontuação de cada perfil para: Conservador <= 12; 13 <= Moderado <= 29; Arrojado >= 30.
 
 
 
@@ -20,5 +20,5 @@ O objetivo deste trabalho é fazer um aplicativo para análise de perfil de inve
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NTc0MTRdfQ==
+eyJoaXN0b3J5IjpbMTc5NzI3OTU3NV19
 -->
