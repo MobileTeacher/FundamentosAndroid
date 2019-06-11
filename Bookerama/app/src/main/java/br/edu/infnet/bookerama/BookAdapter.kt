@@ -28,6 +28,11 @@ class BookAdapter(var items: List<Book>): RecyclerView.Adapter<RecyclerView.View
         }
     }
 
+    fun updateData(booksList: List<Book>){
+        items = booksList
+        notifyDataSetChanged()
+    }
+
 
     class BookViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val titleTextView: TextView = itemView.findViewById(R.id.book_title_textview)
